@@ -6,6 +6,7 @@ import upload_icon from "../../assets/upload.png";
 import more_icon from "../../assets/more.png";
 import notification_icon from "../../assets/notification.png";
 import profile_icon from "../../assets/jack.png";
+import { Link } from "react-router-dom";
 
 function Navbar({ setSideBar }) {
   return (
@@ -21,9 +22,11 @@ function Navbar({ setSideBar }) {
             alt=""
           />
         </div>
-        <div>
-          <img className="fill-white w-20" src={logo} alt="" />
-        </div>
+        <Link to={"/"}>
+          <div>
+            <img className="fill-white w-20" src={logo} alt="" />
+          </div>
+        </Link>
       </div>
 
       <div className="nav-middle flex items-center gap-2">
