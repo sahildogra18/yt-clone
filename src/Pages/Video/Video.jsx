@@ -9,7 +9,7 @@ const Video = () => {
   return (
     <div className="play-container bg-[#0f0f0f] pt-[20px] pb-[20px] flex flex-row gap-4 text-white">
       <PlayVideo videoId={videoId} className="flex-1" />
-      <Recommended className="w-[350px]" />
+      <Recommended categoryId={categoryId} className="w-[350px]" />
     </div>
   );
 };
